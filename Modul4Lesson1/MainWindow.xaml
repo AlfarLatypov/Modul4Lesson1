@@ -1,0 +1,192 @@
+﻿<Window x:Class="Modul4Lesson1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Modul4Lesson1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl>
+            
+            <TabItem Header="Paragraph">
+                <FlowDocumentScrollViewer >
+                    <FlowDocument>
+                        <Paragraph x:Name="FirstParagraph">
+                            <Run>
+                               Герцен родился в семье богатого помещика Ивана Алексеевича (1767-1846), просиходившего от  адрея Колыбина (как Романовы) 
+                            </Run>
+                            <Run >
+                               2) Герцен родился в семье богатого помещика Ивана Алексеевича (1767-1846), просиходившего от  адрея Колыбина (как Романовы)
+                            </Run>
+                        </Paragraph>
+                        <Paragraph  x:Name="SecondParagraph">
+                       Мать была 16-ти летняя немка Гретта.
+                        </Paragraph >
+                    </FlowDocument>
+                </FlowDocumentScrollViewer>
+            </TabItem>
+
+            <TabItem Header="List">
+                <FlowDocumentScrollViewer>
+                    <FlowDocument>
+                        <Paragraph>
+                            Семья Герцен А.И.
+                        </Paragraph>
+                        <List>
+                            <ListItem>
+                                <Paragraph FontWeight="Bold"> Александр (1893)</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Наталья (1893)</Paragraph>
+                            </ListItem>
+                        </List>
+                        <BlockUIContainer>
+                            <StackPanel Orientation="Horizontal">
+                            <RadioButton Content="Txt"></RadioButton>
+                            <RadioButton Content="Txt1"></RadioButton>
+                            </StackPanel>
+                        </BlockUIContainer>
+                        <Paragraph>
+                            Память
+                        </Paragraph>
+                        <List MarkerStyle="Circle"  MarkerOffset="2" x:Name="ListHistory">
+                            <ListItem>
+                                <Paragraph FontWeight="Bold">  Библиотека1</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph FontWeight="Bold">  Библиотека2</Paragraph>
+                            </ListItem>
+
+                        </List>
+                    </FlowDocument>
+                </FlowDocumentScrollViewer>
+            </TabItem>
+
+            <TabItem Header="Table">
+                <FlowDocumentScrollViewer>
+                    <FlowDocument>
+                        <Paragraph FontWeight="Bold"> Содержание</Paragraph>
+
+                        <Table>
+                            <TableRowGroup>
+                                <TableRow>
+                                    <TableCell BorderBrush="Black" BorderThickness="1">
+                                        <Paragraph># п.п.</Paragraph>
+                                    </TableCell>
+                                    <TableCell BorderBrush="Black" BorderThickness="1">
+                                        <Paragraph>Наименование</Paragraph>
+                                    </TableCell>
+                                    <TableCell BorderBrush="Black" BorderThickness="1">
+                                        <Paragraph>Ссылка</Paragraph>
+                                    </TableCell>
+                                </TableRow>
+
+                                <TableRow>
+                                    <TableCell >
+                                        <Paragraph>#1.</Paragraph>
+                                    </TableCell>
+                                    <TableCell >
+                                        <Paragraph>Биография</Paragraph>
+                                    </TableCell>
+                                    <TableCell >
+                                        <Paragraph FontStyle="Italic" Foreground="Blue">https://alfarlatypov.visualstudio.com/_projects</Paragraph>
+                                    </TableCell>
+                                </TableRow>
+                                
+                                
+                                
+                            </TableRowGroup>
+                        </Table>
+                        
+
+                    </FlowDocument>
+                </FlowDocumentScrollViewer>
+            </TabItem>
+
+            <TabItem Header="Section">
+                <FlowDocumentScrollViewer>
+                    <FlowDocument>
+                        <Section FontFamily="Palation" Background="LightYellow" Padding="25" Margin="5">
+                            <Paragraph FontWeight="Bold">Университет (1929-1955)</Paragraph>
+                            <Paragraph >Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955)
+                            Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955)
+                            Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955)
+                            Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955)
+                            Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955)
+                            Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955)
+                            Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955)
+                            Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955)
+                            Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955)</Paragraph>
+                            <BlockUIContainer>
+                                <Button Content="Print" Command="ApplicationCommands.Print"></Button>
+                            </BlockUIContainer>
+                            
+                        </Section>
+                    </FlowDocument>
+                </FlowDocumentScrollViewer>
+            </TabItem>
+
+            <TabItem Header="Floater">
+                <FlowDocumentScrollViewer>
+                    <FlowDocument>
+                        <Paragraph>Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955)
+                            <Run xml:space="preserve">   </Run>
+                            
+                            <Floater FontSize="24" FontStyle="Italic" Foreground="Green" Padding="5"
+                                     Margin="5,10,15,10" Width="250" HorizontalAlignment="Left">
+                                <BlockUIContainer>
+                                    <Image Source="/Img/Alfar.png"></Image>
+                                </BlockUIContainer>
+                                <Paragraph>Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955)</Paragraph> 
+                            </Floater>
+                        </Paragraph>
+
+                        <Paragraph>
+                            Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955) Что то что что (1929-1955)
+                        </Paragraph>
+                        
+                        
+                        
+                    </FlowDocument>
+                </FlowDocumentScrollViewer>
+            </TabItem>
+
+            <TabItem Header="RichTextBox">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="30"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <RichTextBox Grid.Row="0" x:Name="MyRichTextBox">
+                        <FlowDocument>
+                            <Paragraph FontWeight="Bold"> TTGGJCSKNNC KLLK </Paragraph>
+                            <Paragraph>JLKs klnskv klhjnsl ; lskjfl jj lj  lksjkshkjsklsl</Paragraph>
+                            <Paragraph>JLKs klnskv klhjnsl ; lskjfl jj lj  lksjkshkjsklsl</Paragraph>
+                            <Paragraph>JLKs klnskv klhjnsl ; lskjfl jj lj  lksjkshkjsklsl</Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+
+
+
+                    <Grid Grid.Row="1">
+                        <Button HorizontalAlignment="Left" Content="Load Document"
+                                x:Name="LoadDoc" Click="LoadDoc_Click" Width="150" Height="25"></Button>
+                        <Button HorizontalAlignment="Center" Content="Save Document"
+                                x:Name="SaveDoc" Click="SaveDoc_Click" Width="150" Height="25"></Button>
+                    </Grid>
+                    
+                </Grid>
+            </TabItem>
+            
+        </TabControl>
+        
+        
+        
+        
+        
+        
+        
+    </Grid>
+</Window>
